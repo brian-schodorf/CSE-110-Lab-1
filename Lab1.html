@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>My Homepage</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <style>
         .navbar{
             overflow: hidden;
@@ -21,7 +22,7 @@
             display: block; 
             color: rgb(10, 10, 10);
             text-align: center; 
-            padding: 14px 16px; /* Add padding */
+            padding: 14px 16px;
             text-decoration: none;
             font-size: 28px;
         }
@@ -44,7 +45,7 @@
             font-size: 28px;
         }
         p {
-            font-size: 28px; /* Set font size for paragraph text */
+            font-size: 28px;
         }
         .section3 {
             background-color: rgb(245, 240, 230);
@@ -63,6 +64,28 @@
             overflow-y: scroll;
             padding: 10px;
             font-size: 28px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media screen and (max-width: 800px) {
+            .navbar ul {
+                display: none;
+            }
+            #ucsd-logo img {
+                max-width: 75%;
+                height: auto;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 20px;
+            }
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
     </style>
 </head>
